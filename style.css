@@ -1,10 +1,18 @@
-/* .js-display-off {
-  display: none;
+* {
+  font-size: 16px;
 }
 
-.js-display-on {
-  display: flex;
-} */
+body {
+  background: #edf5e1;
+  color: #05386b;
+}
+.green {
+  background: #5cdb95;
+}
+
+.blue {
+  background: #05386b;
+}
 
 .startScreen {
   display: flex;
@@ -12,7 +20,7 @@
   width: 80vw;
   height: 100vh;
   margin: auto;
-  border: 3px solid black;
+  border: 3px solid #05386b;
 }
 
 .main {
@@ -24,11 +32,13 @@
 .feedBack {
   display: flex;
   flex-direction: column;
+  border: 2px solid #05386b;
 }
 
 .endScreen {
   display: flex;
   flex-direction: column;
+  border: 2px solid #05386b;
 }
 
 .title {
@@ -36,7 +46,7 @@
   text-align: center;
   margin: 100px auto;
   padding: 40px;
-  border: 3px solid black;
+  border: 3px solid #05386b;
 }
 
 .discription {
@@ -48,6 +58,7 @@
   margin: auto;
   width: 100px;
   height: 80px;
+  color: #5cdb95;
 }
 
 .nextButton {
@@ -55,10 +66,14 @@
   margin: auto;
   width: 100px;
   height: 80px;
+  font-size: 12px;
+  color: #5cdb95;
+  background: #05386b;
 }
 
 .images {
-  border: 1px black solid;
+  border: 1px solid #05386b;
+  border-radius: 8%;
 }
 
 .top {
@@ -68,11 +83,14 @@
 
 .title {
   text-align: center;
+  background: #379683;
 }
 
 .firstScreen {
   display: flex;
   justify-content: space-around;
+  border: 2px solid #05386b;
+  background: #379683;
 }
 
 .options {
@@ -87,6 +105,11 @@
 
 .question {
   text-align: center;
+}
+
+.guess {
+  color: #5cdb95;
+  background: #05386b;
 }
 
 .guess:hover {
