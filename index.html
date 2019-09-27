@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Quiz App</title>
+  </head>
+
+  <body>
+    <div class="startScreen">
+      <h2 class="title">Iconic Places Quiz</h2>
+      <p class="discription">Test how well you know your Iconic places</p>
+      <input class="startButton" type="button" value="Start Quiz" />
+    </div>
+
+    <hr />
+
+    <div class="main">
+      <form action="" class="appBox" method="post">
+        <div class="top">
+          <img
+            class="images"
+            src="/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/US.jpg"
+            alt="Statue of Liberity"
+          />
+        </div>
+        <fieldset class="firstScreen">
+          <p>Correct: <span class="right">0</span></p>
+          <input class="nextButton" type="button" value="Next" />
+          <p>Wrong: <span class="wrong">0</span></p>
+        </fieldset>
+      </form>
+      <div class="footNotes">
+        <p class="question_number">
+          Questoin: <span id="questionCount">1</span>
+        </p>
+        <p class="question">Where is the Statue of Liberty Located?</p>
+        <div class="options">
+          <input class="ans1 guess" type="button" value="California" />
+          <input class="ans2 guess" type="button" value="France" />
+          <input class="ans3 guess" type="button" value="New York" />
+          <input class="ans4 guess" type="button" value="Italy" />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="feedBack">
+      <h2 class="title">
+        Sorry, The correct answer was: <br />
+        <span class="correctAnswer">"Correct answer"</span>
+      </h2>
+      <input class="nextButton js-resume" type="button" value="Next Question" />
+    </div>
+    <hr />
+    <div class="endScreen">
+      <h2 class="title">
+        8 Correct answers <br />
+        2 Incorrect answers
+      </h2>
+      <input class="nextButton" type="button" value="Try again!" />
+    </div>
+  </body>
+
+  <script src="quiz.js"></script>
+</html>

@@ -1,0 +1,128 @@
+/* .js-display-off {
+  display: none;
+}
+
+.js-display-on {
+  display: flex;
+} */
+
+.startScreen {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.feedBack {
+  display: flex;
+  flex-direction: column;
+}
+
+.endScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 40%;
+  text-align: center;
+  margin: 100px auto;
+  padding: 40px;
+  border: 3px solid black;
+}
+
+.discription {
+  text-align: center;
+}
+
+.startButton {
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 80px;
+}
+
+.nextButton {
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 80px;
+}
+
+.images {
+  border: 1px black solid;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.firstScreen {
+  display: flex;
+  justify-content: space-around;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.question_number {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.question {
+  text-align: center;
+}
+
+.guess:hover {
+  position: relative;
+  top: 2px;
+}
+
+@media screen and (max-width: 520px) {
+  .images {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .guess {
+    height: 40px;
+    margin: 10px;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .images {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+  }
+
+  .firstScreen {
+    margin: auto;
+    width: 60%;
+  }
+  .guess {
+    height: 50px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 25px;
+  }
+}
