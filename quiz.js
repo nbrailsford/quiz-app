@@ -80,7 +80,7 @@ const qandA = [
 
 // array of images src
 const photos = [
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/US.jpg",
+  "US.jpg",
   "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/pisa-italycopy.jpg",
   "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/united-statescopy.jpg",
   "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/Stonehenge-englandcopy.jpg",
