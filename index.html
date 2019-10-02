@@ -11,13 +11,13 @@
   </head>
 
   <body>
-    <div class="startScreen green">
+    <div class="startScreen style">
       <h2 class="title">Iconic Places Quiz</h2>
       <p class="discription">Test how well you know your Iconic places</p>
       <input class="startButton blue" type="button" value="Start Quiz" />
     </div>
 
-    <div class="main">
+    <div class="main style">
       <form action="" class="appBox green" method="post">
         <div class="top">
           <img
@@ -28,14 +28,13 @@
         </div>
         <fieldset class="firstScreen">
           <p>Correct: <span class="right">0</span></p>
-          <input class="nextButton" type="button" value="Next" />
+          <p class="question_number">
+            Questoin: <span id="questionCount">1</span>
+          </p>
           <p>Wrong: <span class="wrong">0</span></p>
         </fieldset>
       </form>
       <div class="footNotes green">
-        <p class="question_number">
-          Questoin: <span id="questionCount">1</span>
-        </p>
         <p class="question">Where is the Statue of Liberty Located?</p>
         <div class="options green">
           <input class="ans1 guess" type="button" value="California" />
@@ -46,7 +45,7 @@
       </div>
     </div>
 
-    <div class="feedBack green">
+    <div class="feedBack style">
       <h2 class="title">
         Sorry, The correct answer was: <br />
         <span class="correctAnswer">"Correct answer"</span>
@@ -54,12 +53,17 @@
       <input class="nextButton js-resume" type="button" value="Next Question" />
     </div>
     <hr />
-    <div class="endScreen green">
-      <h2 class="title">
-        8 Correct answers <br />
-        2 Incorrect answers
+    <div class="endScreen style">
+      <h2 class="results">
+        <span class="right"></span> Correct answers <br />
+        <span class="wrong"></span> Incorrect answers
       </h2>
-      <input class="nextButton" type="button" value="Try again!" />
+      <input
+        class="nextButton"
+        type="button"
+        value="Try again!"
+        onClick="window.location.href=window.location.href"
+      />
     </div>
   </body>
 

@@ -1,7 +1,6 @@
-// cant skip questions
-// if incorrect on submission display correct answer
 //see results at the end and able to start a new quiz/
 //************************************************* */
+//? should i create another array to change the "alt= "attribute?
 
 //array of question and answers
 const qandA = [
@@ -132,8 +131,9 @@ function renderQuestions() {
   $(start_next);
 }
 
+// display end screen when quiz is done
 function score() {
-  if (i === 10) {
+  if (count === 9) {
     $(".main").hide();
     $(".feedBack").hide();
     $(".endScreen").show();
@@ -141,9 +141,10 @@ function score() {
     i++;
   }
 }
-// check if answer is correct and add 1 to correct/wrong;
+// check answer and add 1 to correct/wrong;
 let rightCount = 0;
 let wrongCount = 0;
+let count = 0;
 $(".guess").click(function() {
   $(".main").hide();
   $(".feedBack").show();
@@ -156,6 +157,6 @@ $(".guess").click(function() {
     $(".title").text(`Sorry the correct answer was: ${qandA[i][5]}`);
     $(".wrong").html(wrongCount);
   }
-  //   i++;
+  count++;
   $(score);
 });

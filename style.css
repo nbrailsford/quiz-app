@@ -1,12 +1,19 @@
 * {
   font-size: 16px;
+  margin: 0;
 }
 
 body {
   background: #edf5e1;
   color: #05386b;
 }
-.green {
+.style {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  border: 3px solid #05386b;
   background: #5cdb95;
 }
 
@@ -14,31 +21,27 @@ body {
   background: #05386b;
 }
 
-.startScreen {
+.firstScreen {
   display: flex;
-  flex-direction: column;
-  width: 80vw;
-  height: 100vh;
-  margin: auto;
-  border: 3px solid #05386b;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.feedBack {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   border: 2px solid #05386b;
+  background: #379683;
 }
 
 .endScreen {
   display: flex;
   flex-direction: column;
   border: 2px solid #05386b;
+}
+.results {
+  display: inline-block;
+  margin: auto;
+  padding: 10%;
+  line-height: 200%;
+  font-size: 2em;
+}
+.results > span {
+  font-size: 1em;
 }
 
 .title {
@@ -59,6 +62,11 @@ body {
   width: 100px;
   height: 80px;
   color: #5cdb95;
+}
+
+.question {
+  font-size: 1.3em;
+  margin: 15px;
 }
 
 .nextButton {
@@ -86,16 +94,10 @@ body {
   background: #379683;
 }
 
-.firstScreen {
-  display: flex;
-  justify-content: space-around;
-  border: 2px solid #05386b;
-  background: #379683;
-}
-
 .options {
   display: flex;
   flex-direction: column;
+  height: 65vh;
 }
 
 .question_number {
@@ -116,18 +118,31 @@ body {
   position: relative;
   top: 2px;
 }
+.nextButton:hover {
+  position: relative;
+  top: 2px;
+}
 
 @media screen and (max-width: 520px) {
   .images {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 5px;
   }
 
   .guess {
     height: 40px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 25px;
+  }
+  .options {
+    height: 100vh;
+  }
+  .startScreen {
+    width: 100vw;
+  }
+  .style {
+    width: 100vw;
   }
 }
 
@@ -137,15 +152,14 @@ body {
     height: 150px;
     margin: 15px;
   }
-
-  .firstScreen {
-    margin: auto;
-    width: 60%;
-  }
   .guess {
     height: 50px;
     width: 60%;
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 25px;
+  }
+  .firstScreen {
+    width: 80%;
+    margin: auto;
   }
 }
