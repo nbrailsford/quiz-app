@@ -81,15 +81,16 @@ const qandA = [
 // array of images src
 const photos = [
   "US.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/pisa-italycopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/united-statescopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/Stonehenge-englandcopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/Tajmahal-indiacopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/paris-francecopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/brazilcopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/russiacopy.jpg",
-  "/Users/nathanbrailsford/Desktop/bootcamp/projects/quiz-app/jordancopy.jpg"
+  "pisa-italycopy.jpg",
+  "united-statescopy.jpg",
+  "Stonehenge-englandcopy.jpg",
+  "Tajmahal-indiacopy.jpg",
+  "paris-francecopy.jpg",
+  "brazilcopy.jpg",
+  "russiacopy.jpg",
+  "jordancopy.jpg"
 ];
+
 // i is the current queston
 let i = 0;
 
