@@ -1,5 +1,5 @@
 * {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ body {
   margin: auto;
   padding: 10%;
   line-height: 200%;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .results > span {
   font-size: 1em;
