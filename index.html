@@ -11,16 +11,16 @@
   </head>
 
   <body>
-    <div class="startScreen style">
+    <header class="startScreen style">
       <h2 class="title">Iconic Places Quiz</h2>
       <p class="discription">Test how well you know your Iconic places</p>
       <input class="startButton blue" type="button" value="Start Quiz" />
-    </div>
+    </header>
 
-    <div class="main style">
+    <main class="main style">
       <form action="" class="appBox green" method="post">
         <div class="top">
-          <img class="images" src="US.jpg" alt="placeholder" />
+          <img class="images" src="images/US.jpg" alt="placeholder" />
         </div>
         <fieldset class="firstScreen">
           <p>Correct: <span class="right">0</span></p>
@@ -32,24 +32,29 @@
       </form>
       <div class="footNotes green">
         <p class="question">Where is the Statue of Liberty Located?</p>
-        <div class="options green">
+        <fieldset class="options green">
+          <label for=""></label>
           <input class="ans1 guess" type="button" value="California" />
+          <label for="answer two"></label>
+          <label for=""></label>
           <input class="ans2 guess" type="button" value="France" />
+          <label for=""></label>
           <input class="ans3 guess" type="button" value="New York" />
+          <label for=""></label>
           <input class="ans4 guess" type="button" value="Italy" />
-        </div>
+        </fieldset>
       </div>
-    </div>
+    </main>
 
-    <div class="feedBack style">
+    <section class="feedBack style">
       <h2 class="title">
         Sorry, The correct answer was: <br />
         <span class="correctAnswer">"Correct answer"</span>
       </h2>
       <input class="nextButton js-resume" type="button" value="Next Question" />
-    </div>
-    <hr />
-    <div class="endScreen style">
+    </section>
+
+    <section class="endScreen style">
       <h2 class="results">
         <span class="right"></span> Correct answers out of 9<br />
         <span class="wrong">0</span> Incorrect answers
@@ -60,7 +65,7 @@
         value="Try again!"
         onClick="window.location.href=window.location.href"
       />
-    </div>
+    </section>
   </body>
 
   <script src="quiz.js"></script>

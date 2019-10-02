@@ -28,6 +28,10 @@ body {
   background: #379683;
 }
 
+.firstScreen > p {
+  color: #edf5e1;
+}
+
 .endScreen {
   display: flex;
   flex-direction: column;
@@ -62,11 +66,13 @@ body {
   width: 100px;
   height: 80px;
   color: #5cdb95;
+  cursor: pointer;
 }
 
 .question {
   font-size: 1.3em;
   margin: 15px;
+  text-align: center;
 }
 
 .nextButton {
@@ -77,6 +83,7 @@ body {
   font-size: 12px;
   color: #5cdb95;
   background: #05386b;
+  cursor: pointer;
 }
 
 .images {
@@ -97,21 +104,17 @@ body {
 .options {
   display: flex;
   flex-direction: column;
-  height: 65vh;
 }
 
 .question_number {
   text-align: center;
-  font-size: 0.8em;
-}
-
-.question {
-  text-align: center;
+  font-size: 1em;
 }
 
 .guess {
   color: #5cdb95;
   background: #05386b;
+  cursor: pointer;
 }
 
 .guess:hover {

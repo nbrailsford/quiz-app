@@ -80,15 +80,15 @@ const qandA = [
 
 // array of images src
 const photos = [
-  "US.jpg",
-  "pisa-italycopy.jpg",
-  "united-statescopy.jpg",
-  "Stonehenge-englandcopy.jpg",
-  "Tajmahal-indiacopy.jpg",
-  "paris-francecopy.jpg",
-  "brazilcopy.jpg",
-  "russiacopy.jpg",
-  "jordancopy.jpg"
+  "images/US.jpg",
+  "images/pisa-italycopy.jpg",
+  "images/united-statescopy.jpg",
+  "images/Stonehenge-englandcopy.jpg",
+  "images/Tajmahal-indiacopy.jpg",
+  "images/paris-francecopy.jpg",
+  "images/brazilcopy.jpg",
+  "images/russiacopy.jpg",
+  "images/jordancopy.jpg"
 ];
 
 // i is the current queston
@@ -129,6 +129,7 @@ function renderQuestions() {
   $(".ans2").val(qandA[i][2]);
   $(".ans3").val(qandA[i][3]);
   $(".ans4").val(qandA[i][4]);
+  $(changeLabels);
   $(start_next);
 }
 
@@ -161,3 +162,7 @@ $(".guess").click(function() {
   count++;
   $(score);
 });
+
+function changeLabels() {
+  this.label.htmlFor = qandA[i][5];
+}
