@@ -96,6 +96,7 @@ let i = 0;
 
 // render first page and hide others
 $(function() {
+  $(".active").hide();
   $(".main").hide();
   $(".feedBack").hide();
   $(".endScreen").hide();

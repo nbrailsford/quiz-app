@@ -1,31 +1,38 @@
 * {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
 body {
   background: #edf5e1;
-  color: #05386b;
+  color: #7395ae;
 }
 .style {
+  position: relative;
+  top: 20px;
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 100vh;
+  height: 90vh;
   margin: auto;
-  border: 3px solid #05386b;
-  background: #5cdb95;
+  border: 3px solid black;
+  background: #557a95;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }
 
 .blue {
-  background: #05386b;
+  background: #557a95;
 }
 
 .firstScreen {
   display: flex;
   justify-content: space-around;
-  border: 2px solid #05386b;
-  background: #379683;
+  border: 2px solid #5d5c61;
+  background: #557a95;
 }
 
 .firstScreen > p {
@@ -35,7 +42,7 @@ body {
 .endScreen {
   display: flex;
   flex-direction: column;
-  border: 2px solid #05386b;
+  border: 2px solid #5d5c61;
 }
 .results {
   display: inline-block;
@@ -49,11 +56,15 @@ body {
 }
 
 .title {
+  position: relative;
+  top: 20px;
   width: 40%;
   text-align: center;
   margin: 100px auto;
   padding: 40px;
-  border: 3px solid #05386b;
+  border: 3px solid #5d5c61;
+  text-align: center;
+  background: #557a95;
 }
 
 .discription {
@@ -65,7 +76,8 @@ body {
   margin: auto;
   width: 100px;
   height: 80px;
-  color: #5cdb95;
+  color: black;
+  background-color: #5d5c61;
   cursor: pointer;
 }
 
@@ -80,25 +92,20 @@ body {
   margin: auto;
   width: 100px;
   height: 80px;
-  font-size: 12px;
-  color: #5cdb95;
-  background: #05386b;
+  font-size: 110%;
+  color: #7395ae;
+  background: #5d5c61;
   cursor: pointer;
 }
 
 .images {
-  border: 1px solid #05386b;
+  border: 1px solid #5d5c61;
   border-radius: 8%;
 }
 
 .top {
   display: flex;
   justify-content: center;
-}
-
-.title {
-  text-align: center;
-  background: #379683;
 }
 
 .options {
@@ -112,9 +119,10 @@ body {
 }
 
 .guess {
-  color: #5cdb95;
-  background: #05386b;
+  color: #7395ae;
+  background: #5d5c61;
   cursor: pointer;
+  font-size: 150%;
 }
 
 .guess:hover {
@@ -133,6 +141,14 @@ body {
     margin: 5px;
   }
 
+  .style {
+    height: 100vh;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    left: 2px;
+  }
+
   .guess {
     height: 40px;
     margin: 20px;
@@ -146,6 +162,12 @@ body {
   }
   .style {
     width: 100vw;
+  }
+  .title {
+    width: 90%;
+  }
+  p {
+    width: 90%;
   }
 }
 
@@ -164,5 +186,9 @@ body {
   .firstScreen {
     width: 80%;
     margin: auto;
+  }
+
+  .title {
+    width: 90%;
   }
 }
